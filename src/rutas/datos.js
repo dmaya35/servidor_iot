@@ -47,7 +47,7 @@ router.get("/datos", (req, res) => {
 
 // Ruta para obtener datos por ID
 router.get("/datos/:nodo", (req, res) => {
-  const nodo = req.params.nodo; 
+  const nodo = req.params.nodo;
   connection.getConnection(function (error, tempConn) {
     if (error) {
       console.error("Error en la conexión a MySQL:", error);
