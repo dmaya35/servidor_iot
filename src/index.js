@@ -49,9 +49,9 @@ client.on("message", function (topic, message) {
   let json2;
   let json3;
 
-  if (temperatura > 34 && humedad_suelo < 50) {
+  if (temperatura > 32 && humedad_suelo < 50) {
     json2 = { estado_suelo: "Suelo seco, activar riego" };
-  } else if (temperatura > 34 && humedad_suelo >= 50 && humedad_suelo < 85) {
+  } else if (temperatura > 32 && humedad_suelo >= 50 && humedad_suelo < 85) {
     json2 = {
       estado_suelo: "Suelo con buena humedad, mantener riego bajo",
     };
